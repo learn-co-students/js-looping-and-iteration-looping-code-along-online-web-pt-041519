@@ -5,3 +5,10 @@ function writeCards(names, special) {
     }
     return array;
 }
+
+function countdown(n) {
+    let number = n + 1
+    while ( number > 0 ) {
+        console.log(number -= 1);
+    }
+}
