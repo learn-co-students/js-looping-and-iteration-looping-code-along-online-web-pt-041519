@@ -1,19 +1,13 @@
 // Code your solutions in this file
 
-function writeCards(array, eventName) {
-   let output = [];
-
-   for (let i = 0; i < array.length; i++) {
-      output.push(`Thank you, ${array[i]}, for the wonderful ${eventName} gift!`)
-   }
-   return output;
+function writeCards(names) {
+   let msgs = names.map(name => `Thank you, ${name}, for the wonderful surprise gift!`)
+   return msgs
 }
 
-
 function countdown(number) {
-   let i = number;
-   while (i >= 0) {
-      console.log(i);
-      i --;
+   for(let i = number; i >= 0; i--) {
+      console.log(i)
    }
-};
+}
+
